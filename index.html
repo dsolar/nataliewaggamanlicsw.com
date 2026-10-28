@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Natalie Waggaman, LICSW</title>
+<link rel="canonical" href="https://nataliewaggamanlicsw.com/">
+<meta property="og:title" content="Natalie Waggaman, LICSW">
+<meta property="og:description" content="Online therapy for teens and adults in Massachusetts. Free 15-minute consultation.">
+<meta property="og:type" content="website">
+<meta name="description" content="Natalie Waggaman, LICSW. Individual therapy for teens and adults in Massachusetts, offered online. Anxiety, relationships, life transitions, and gray-area alcohol or cannabis use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,750&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: one calm column of sections on a cool linen ground; spruce ink, ink-blue accent, a butter highlighter marks the few words that matter. */
+:root {
+  --bg: #F4F5F1;
+  --surface: #FFFFFF;
+  --tint: #E8ECE6;
+  --ink: #1C2826;
+  --muted: #56635F;
+  --line: #D5DBD4;
+  --accent: #33509C;
+  --accent-ink: #FFFFFF;
+  --hl: #F4D27A;
+  --band: #1F2E2B;
+  --band-ink: #EEF2EC;
+  --band-muted: #A9B8B2;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --ui: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --step-0: 1.0625rem;
+  --step-1: 1.25rem;
+  --step-2: 1.6rem;
+  --step-3: 2.2rem;
+  --step-4: clamp(2.4rem, 5.6vw, 3.9rem);
+  --max: 1080px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121a19; --surface: #19232158; --tint: #1c2725; --ink: #E7ECE8; --muted: #A3B1AC;
+    --line: #2C3A37; --accent: #93A9EC; --accent-ink: #121a19; --hl: #8A6A1F;
+    --band: #0D1413; --band-ink: #E7ECE8; --band-muted: #95A59F; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121a19; --surface: #19232158; --tint: #1c2725; --ink: #E7ECE8; --muted: #A3B1AC;
+  --line: #2C3A37; --accent: #93A9EC; --accent-ink: #121a19; --hl: #8A6A1F;
+  --band: #0D1413; --band-ink: #E7ECE8; --band-muted: #95A59F; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0;
+  background: var(--bg); color: var(--ink);
+  font-family: var(--body); font-size: var(--step-0); line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap {
+  max-width: var(--max); margin: 0 auto;
+  padding-left: max(20px, env(safe-area-inset-left, 0px));
+  padding-right: max(20px, env(safe-area-inset-right, 0px));
+}
+h1, h2, h3 { font-family: var(--display); font-weight: 650; line-height: 1.12; letter-spacing: -0.015em; text-wrap: balance; margin: 0; }
+h2 { font-size: var(--step-3); }
+h3 { font-size: var(--step-1); }
+p { margin: 0; }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px;
+}
+.mark { background: linear-gradient(transparent 58%, var(--hl) 58%, var(--hl) 92%, transparent 92%); padding: 0 .08em; }
+.eyebrow { font-family: var(--ui); font-size: .8rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.lede { font-size: var(--step-1); color: var(--muted); max-width: 36rem; }
+section { padding-block: clamp(56px, 9vw, 104px); }
+.section-head { display: grid; gap: 14px; max-width: 42rem; margin-bottom: 40px; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; font-family: var(--ui); font-weight: 650; font-size: 1rem;
+  padding: 14px 22px; border-radius: 999px; text-decoration: none; border: 1.5px solid transparent; cursor: pointer;
+}
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { filter: brightness(1.08); }
+.btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
+.btn-ghost:hover { border-color: var(--ink); }
+
+/* Header */
+header.site { padding-block: 22px; }
+.nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { text-decoration: none; color: var(--ink); display: grid; line-height: 1.15; }
+.brand b { font-family: var(--display); font-size: 1.2rem; font-weight: 750; letter-spacing: -0.01em; }
+.brand span { font-family: var(--ui); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.nav ul { list-style: none; display: flex; gap: 26px; margin: 0; padding: 0; font-family: var(--ui); font-size: .95rem; }
+.nav ul a { color: var(--ink); text-decoration: none; }
+.nav ul a:hover { color: var(--accent); }
+.nav .btn { padding: 10px 18px; font-size: .92rem; }
+@media (max-width: 820px) { .nav ul { display: none; } }
+
+/* Hero */
+.hero { padding-block: clamp(28px, 6vw, 72px) clamp(56px, 9vw, 96px); }
+.hero-grid { display: grid; grid-template-columns: 1.25fr .9fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.hero-copy { display: grid; gap: 26px; min-width: 0; }
+.hero h1 { font-size: var(--step-4); font-weight: 750; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.phone-inline { font-family: var(--ui); color: var(--muted); font-size: .95rem; }
+.phone-inline strong { color: var(--ink); font-weight: 650; user-select: all; }
+.status {
+  display: inline-flex; align-items: center; gap: 10px; font-family: var(--ui); font-size: .9rem; color: var(--ink);
+  background: var(--tint); padding: 8px 14px; border-radius: 999px; justify-self: start;
+}
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #C9962B; flex: none; }
+
+.portrait { display: grid; gap: 14px; min-width: 0; }
+.photo {
+  aspect-ratio: 4 / 5; max-width: 100%; border-radius: 200px 200px 18px 18px; background: var(--tint);
+  border: 1.5px dashed var(--line); display: grid; place-items: center; text-align: center; padding: 24px;
+  color: var(--muted); font-family: var(--ui); font-size: .92rem;
+}
+.glance { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.glance div { background: var(--bg); padding: 12px 14px; display: grid; gap: 2px; }
+.glance dt { font-family: var(--ui); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.glance dd { margin: 0; font-family: var(--ui); font-weight: 650; font-size: .98rem; }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .portrait { max-width: 420px; }
+}
+
+/* Familiar */
+.familiar { background: var(--tint); }
+.familiar-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 6vw, 72px); align-items: start; }
+.familiar ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+.familiar li { padding: 18px 0; border-top: 1px solid var(--line); font-size: var(--step-1); line-height: 1.4; }
+.familiar li:last-child { border-bottom: 1px solid var(--line); }
+@media (max-width: 760px) { .familiar-grid { grid-template-columns: 1fr; } }
+
+/* Specialties */
+.spec-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.spec { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: grid; gap: 10px; align-content: start; }
+.spec p { color: var(--muted); font-size: 1rem; }
+@media (max-width: 900px) { .spec-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .spec-grid { grid-template-columns: 1fr; } }
+
+/* Gray area band */
+.band { background: var(--band); color: var(--band-ink); }
+.band .eyebrow { color: var(--band-muted); }
+.band-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 72px); align-items: start; }
+.band h2 { font-size: clamp(2rem, 4.4vw, 3rem); }
+.band p { color: var(--band-muted); }
+.band .copy { display: grid; gap: 18px; min-width: 0; }
+.band ul { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; color: var(--band-ink); }
+@media (max-width: 760px) { .band-grid { grid-template-columns: 1fr; } }
+
+/* Approach */
+.approach-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(28px, 6vw, 72px); }
+.approach-grid .copy { display: grid; gap: 18px; max-width: 34rem; }
+.methods { display: grid; gap: 0; margin: 0; }
+.methods div { display: grid; grid-template-columns: 12rem 1fr; gap: 18px; padding: 16px 0; border-top: 1px solid var(--line); }
+.methods div:last-child { border-bottom: 1px solid var(--line); }
+.methods dt { font-family: var(--ui); font-weight: 650; }
+.methods dd { margin: 0; color: var(--muted); font-size: 1rem; }
+@media (max-width: 860px) { .approach-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .methods div { grid-template-columns: 1fr; gap: 4px; } }
+
+/* About */
+.about { background: var(--tint); }
+.about-grid { display: grid; grid-template-columns: 1.3fr .9fr; gap: clamp(28px, 6vw, 72px); align-items: start; }
+.about .copy { display: grid; gap: 18px; max-width: 38rem; }
+.creds { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: grid; gap: 16px; }
+.creds dl { margin: 0; display: grid; gap: 14px; }
+.creds dt { font-family: var(--ui); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.creds dd { margin: 2px 0 0; font-family: var(--ui); font-weight: 650; font-variant-numeric: tabular-nums; }
+@media (max-width: 820px) { .about-grid { grid-template-columns: 1fr; } }
+
+/* Steps */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; counter-reset: step; }
+.steps li { counter-increment: step; display: grid; gap: 10px; align-content: start; padding-top: 22px; border-top: 2px solid var(--ink); }
+.steps li::before { content: "Step " counter(step); font-family: var(--ui); font-size: .8rem; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+.steps p { color: var(--muted); font-size: 1rem; }
+@media (max-width: 760px) { .steps { grid-template-columns: 1fr; gap: 28px; } }
+
+/* Fees */
+.fees { background: var(--tint); }
+.fee-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.fee { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; display: grid; gap: 10px; align-content: start; }
+.fee .big { font-family: var(--display); font-size: 2.4rem; font-weight: 750; line-height: 1; font-variant-numeric: tabular-nums; }
+.fee .big small { font-size: 1rem; font-weight: 500; color: var(--muted); }
+.fee p, .fee li { color: var(--muted); font-size: 1rem; }
+.fee ul { margin: 0; padding-left: 1.1em; display: grid; gap: 4px; }
+.gfe { margin-top: 22px; font-size: .95rem; color: var(--muted); max-width: 52rem; }
+@media (max-width: 900px) { .fee-grid { grid-template-columns: 1fr; } }
+
+/* FAQ */
+.faq-list { display: grid; gap: 0; max-width: 46rem; }
+.faq-list details { border-top: 1px solid var(--line); padding: 18px 0; }
+.faq-list details:last-child { border-bottom: 1px solid var(--line); }
+.faq-list summary { cursor: pointer; font-family: var(--ui); font-weight: 650; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: "+"; font-weight: 500; color: var(--muted); }
+.faq-list details[open] summary::after { content: "\2212"; }
+.faq-list details p { margin-top: 10px; color: var(--muted); }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 6vw, 72px); align-items: start; }
+.contact .copy { display: grid; gap: 20px; }
+.phone-card { display: grid; gap: 8px; padding: 22px; border-radius: 16px; background: var(--tint); }
+.phone-card .num { font-family: var(--display); font-size: 1.9rem; font-weight: 750; user-select: all; font-variant-numeric: tabular-nums; }
+.phone-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.copybtn { font-family: var(--ui); font-size: .85rem; font-weight: 650; padding: 7px 14px; border-radius: 999px; border: 1.5px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; }
+form { display: grid; gap: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: clamp(20px, 4vw, 32px); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 560px) { .row2 { grid-template-columns: 1fr; } }
+label { display: grid; gap: 6px; font-family: var(--ui); font-size: .9rem; font-weight: 650; }
+input, textarea, select {
+  font: inherit; font-family: var(--body); font-weight: 400; font-size: 1rem; color: var(--ink); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; width: 100%;
+}
+textarea { min-height: 120px; resize: vertical; }
+.fine { font-size: .88rem; color: var(--muted); font-family: var(--ui); }
+.notice { font-family: var(--ui); font-size: .95rem; padding: 12px 14px; border-radius: 10px; background: var(--tint); }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+
+/* Footer */
+footer.site { background: var(--band); color: var(--band-muted); padding-block: 44px; font-family: var(--ui); font-size: .92rem; }
+.foot-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 28px; }
+.crisis { color: var(--band-ink); font-size: 1rem; }
+.crisis strong { color: var(--band-ink); }
+footer a { color: var(--band-ink); }
+@media (max-width: 700px) { .foot-grid { grid-template-columns: 1fr; } }
+
+.mono { font-family: var(--display); font-weight: 750; font-size: clamp(4rem, 12vw, 7rem); letter-spacing: -0.04em; color: var(--accent); opacity: .55; }
+.photo { border-style: solid; }
+.contact-side { display: grid; gap: 16px; }
+.contact-side .phone-card p { color: var(--muted); }
+</style>
+</head>
+<body>
+
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Natalie Waggaman, LICSW, home">
+      <b>Natalie Waggaman</b>
+      <span>LICSW &middot; Therapy</span>
+    </a>
+    <ul>
+      <li><a href="#help">How I help</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#fees">Fees</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#contact">Free consultation</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="status">Waitlist open for online sessions</span>
+        <h1>You don't need to have it all <span class="mark">figured out</span> to start.</h1>
+        <p class="lede">Individual therapy for teens and adults, online across Massachusetts. Practical, collaborative, and a lot more conversational than you might expect.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Book a free 15-minute call</a>
+          <span class="phone-inline">or call <strong>(617) 712-2329</strong></span>
+        </div>
+      </div>
+      <aside class="portrait" aria-label="Practice at a glance">
+        <div class="photo" aria-hidden="true"><span class="mono">NW</span></div>
+        <dl class="glance">
+          <div><dt>Sessions</dt><dd>Online, secure video</dd></div>
+          <div><dt>Who I see</dt><dd>Teens and adults</dd></div>
+          <div><dt>Insurance</dt><dd>BCBS, out of network</dd></div>
+          <div><dt>Based in</dt><dd>Needham, MA</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="familiar" aria-labelledby="familiar-h">
+    <div class="wrap familiar-grid">
+      <div class="section-head" style="margin-bottom:0">
+        <span class="eyebrow">Why people reach out</span>
+        <h2 id="familiar-h">Maybe some of this sounds familiar.</h2>
+        <p class="lede">Most people don't arrive with a neat explanation. That's fine. Figuring out what's actually going on is part of the work we do together.</p>
+      </div>
+      <ul>
+        <li>Your mind won't stop running, and the worry follows you to bed.</li>
+        <li>A relationship feels strained, and you can't tell what to do next.</li>
+        <li>You're facing a big decision or a change you didn't plan for.</li>
+        <li>You've started wondering whether you drink or smoke more than you want to.</li>
+        <li>Everything looks fine from the outside, but you don't feel like yourself.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="help" aria-labelledby="help-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How I help</span>
+        <h2 id="help-h">What we can work on</h2>
+      </div>
+      <div class="spec-grid">
+        <article class="spec"><h3>Anxiety and overthinking</h3><p>Learn to notice the thoughts that spiral, push back on them, and get some quiet back.</p></article>
+        <article class="spec"><h3>Relationships</h3><p>Partners, family, friends, and coworkers. Understand your patterns and communicate in ways that land.</p></article>
+        <article class="spec"><h3>Alcohol and cannabis use</h3><p>For people who want to cut back or take a closer look, without needing a diagnosis first.</p></article>
+        <article class="spec"><h3>Depression and self-esteem</h3><p>Build momentum when things feel flat, and loosen the grip of a harsh inner critic.</p></article>
+        <article class="spec"><h3>Life transitions</h3><p>New jobs, breakups, divorce, moves, parenthood, and the stretches when you're not sure what's next.</p></article>
+        <article class="spec"><h3>Teens</h3><p>A space for adolescents to talk honestly about school, friends, family, and pressure.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="gray-h">
+    <div class="wrap band-grid">
+      <div class="copy">
+        <span class="eyebrow">A focus of my practice</span>
+        <h2 id="gray-h">Gray-area drinking and cannabis use</h2>
+      </div>
+      <div class="copy">
+        <p>A lot of people don't see themselves as having a substance problem, yet they've noticed the nightly glass of wine or the evening smoke has become a habit they'd like to rethink. You don't need a label to want a change.</p>
+        <p>We'll look at what your use is doing for you, what it's costing you, and what you want instead. Moderation and taking a break are both on the table. The goal is yours to set.</p>
+        <ul>
+          <li>No judgment and no lectures</li>
+          <li>Grounded in Motivational Interviewing</li>
+          <li>Focused on the life you want, not just the substance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" aria-labelledby="approach-h">
+    <div class="wrap approach-grid">
+      <div class="copy">
+        <span class="eyebrow">My approach</span>
+        <h2 id="approach-h">Warm, direct, and built around you</h2>
+        <p>Clients often describe me as warm, genuine, and funny. Sessions feel like a real conversation, with structure underneath it. Early on, we'll get clear on what's getting in your way and agree on a plan to address it.</p>
+        <p>Many clients notice things starting to lift within the first month, and we keep building from there.</p>
+      </div>
+      <dl class="methods" aria-label="Methods I draw on">
+        <div><dt>Cognitive Behavioral Therapy</dt><dd>Spot how your thoughts shape your feelings, and practice responding to them differently.</dd></div>
+        <div><dt>Motivational Interviewing</dt><dd>Explore your own reasons for change, at your pace, without pressure.</dd></div>
+        <div><dt>Strengths-Based</dt><dd>Start from what's already working in your life and build on it.</dd></div>
+        <div><dt>Interpersonal</dt><dd>Look at how your relationships affect your mood, and the other way around.</dd></div>
+        <div><dt>Solution-Focused</dt><dd>Keep the work practical and pointed at the change you want to see.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="about" class="about" aria-labelledby="about-h">
+    <div class="wrap about-grid">
+      <div class="copy">
+        <span class="eyebrow">About Natalie</span>
+        <h2 id="about-h">Hi, I'm Natalie.</h2>
+        <p>I'm a Licensed Independent Clinical Social Worker based in Needham. I earned my master's in clinical social work at Boston University, and I've worked across college mental health, intensive residential treatment for adolescents, and the juvenile court system.</p>
+        <p>That range taught me to meet people where they are. Whether you're a teenager figuring out who you are or an adult rethinking how things are going, my job is to help you make sense of it and find a way forward that fits your life.</p>
+      </div>
+      <aside class="creds" aria-label="Credentials">
+        <span class="eyebrow">Credentials</span>
+        <dl>
+          <div><dt>License</dt><dd>LICSW, Massachusetts #120032</dd></div>
+          <div><dt>Education</dt><dd>MSW, Boston University, 2014</dd></div>
+          <div><dt>Format</dt><dd>Individual sessions, telehealth</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section aria-labelledby="start-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Getting started</span>
+        <h2 id="start-h">What happens after you reach out</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>A free 15-minute call</h3><p>We'll talk briefly about what's going on and what you're looking for, so you can see whether we're a good fit.</p></li>
+        <li><h3>Your first session</h3><p>We'll go deeper on what brought you in, what you want to change, and how we'll work on it together.</p></li>
+        <li><h3>Ongoing sessions</h3><p>Regular online sessions, with check-ins along the way to make sure therapy keeps working for you.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="fees" class="fees" aria-labelledby="fees-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Fees and insurance</span>
+        <h2 id="fees-h">Clear costs, no surprises</h2>
+      </div>
+      <div class="fee-grid">
+        <div class="fee">
+          <span class="eyebrow">Self-pay</span>
+          <div class="big">$200 <small>per session</small></div>
+          <p>A sliding scale is available. Ask if cost is a barrier.</p>
+        </div>
+        <div class="fee">
+          <span class="eyebrow">Insurance</span>
+          <ul>
+            <li>Blue Cross Blue Shield</li>
+            <li>Out-of-network: I can provide a superbill for possible reimbursement</li>
+          </ul>
+        </div>
+        <div class="fee">
+          <span class="eyebrow">Payment</span>
+          <ul>
+            <li>Visa and Mastercard</li>
+            <li>PayPal</li>
+            <li>Venmo</li>
+          </ul>
+        </div>
+      </div>
+      <p class="gfe"><strong>Good Faith Estimate:</strong> Under the No Surprises Act, if you don't have insurance or aren't using it, you have the right to receive a Good Faith Estimate of the expected cost of your care. Ask for one any time, or visit <a href="https://www.cms.gov/nosurprises" target="_blank" rel="noopener">cms.gov/nosurprises</a>.</p>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Questions</span>
+        <h2 id="faq-h">Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Do you offer in-person sessions?</summary>
+          <p>Sessions are currently online through a secure, HIPAA-compliant video platform. You'll need to be located in Massachusetts at the time of each session.</p>
+        </details>
+        <details>
+          <summary>Are you taking new clients?</summary>
+          <p>I'm currently keeping a waitlist for online therapy. Reach out and I'll let you know the expected timing during our consultation call.</p>
+        </details>
+        <details>
+          <summary>How long is a session, and how often do we meet?</summary>
+          <p>Most sessions run about 50 minutes. Many people start weekly and shift to every other week as things improve.</p>
+        </details>
+        <details>
+          <summary>Do I have to quit drinking or using cannabis to work with you?</summary>
+          <p>No. Some clients want to cut back, some want a break, and some just want to understand their habits better. We'll work toward the goal you choose.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <div class="wrap contact-grid">
+      <div class="copy">
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-h">Let's set up your free consultation</h2>
+        <p class="lede">The easiest first step is a quick call. There's no cost and no commitment.</p>
+        <div class="phone-card">
+          <span class="eyebrow">Phone</span>
+          <div class="phone-row">
+            <span class="num" id="phone">(617) 712-2329</span>
+            <button class="copybtn" id="copyPhone" type="button">Copy</button>
+          </div>
+        </div>
+      </div>
+      <div class="contact-side">
+        <div class="phone-card">
+          <span class="eyebrow">How it works</span>
+          <p>Call or text and leave a brief message with your name and the best time to reach you. I'll call you back to set up your free 15-minute consultation, usually within two business days.</p>
+        </div>
+        <p class="fine">Please don't share sensitive health details by text or voicemail. We can talk more on the phone. This line is not monitored for emergencies. If you're in crisis, call or text 988.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div style="display:grid;gap:10px">
+      <p class="crisis"><strong>In crisis?</strong> Call or text <strong>988</strong> for the Suicide and Crisis Lifeline, or call <strong>911</strong> in an emergency.</p>
+      <p>Natalie Waggaman, LICSW &middot; Massachusetts License #120032 &middot; Needham, MA</p>
+    </div>
+    <div style="display:grid;gap:10px">
+      <p>&copy; 2026 Natalie Waggaman, LICSW</p>
+      <p>nataliewaggamanlicsw.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('copyPhone');
+  btn.addEventListener('click', function () {
+    var text = '(617) 712-2329';
+    var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1600); };
+    try {
+      navigator.clipboard.writeText(text).then(done, function () { selectPhone(); });
+    } catch (e) { selectPhone(); }
+  });
+  function selectPhone() {
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('phone'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    btn.textContent = 'Selected';
+  }
+})();
+</script>
+
+</body>
+</html>
