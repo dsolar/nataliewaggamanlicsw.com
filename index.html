@@ -233,6 +233,7 @@ footer a { color: var(--band-ink); }
 .mono { font-family: var(--display); font-weight: 750; font-size: clamp(4rem, 12vw, 7rem); letter-spacing: -0.04em; color: var(--accent); opacity: .55; }
 .photo { border-style: solid; }
 .contact-side { display: grid; gap: 16px; }
+.email { font-family: var(--display); font-weight: 650; font-size: clamp(1.05rem, 3.6vw, 1.35rem); overflow-wrap: anywhere; }
 .contact-side .phone-card p { color: var(--muted); }
 </style>
 </head>
@@ -447,7 +448,7 @@ footer a { color: var(--band-ink); }
       <div class="copy">
         <span class="eyebrow">Contact</span>
         <h2 id="contact-h">Let's set up your free consultation</h2>
-        <p class="lede">The easiest first step is a quick call. There's no cost and no commitment.</p>
+        <p class="lede">The easiest first step is a quick call or email. There's no cost and no commitment.</p>
         <div class="phone-card">
           <span class="eyebrow">Phone</span>
           <div class="phone-row">
@@ -455,13 +456,19 @@ footer a { color: var(--band-ink); }
             <button class="copybtn" id="copyPhone" type="button">Copy</button>
           </div>
         </div>
+        <div class="phone-card">
+          <span class="eyebrow">Email</span>
+          <div class="phone-row">
+            <a class="email" id="email" href="mailto:natalie@nataliewaggamanlicsw.com">natalie@nataliewaggamanlicsw.com</a>
+          </div>
+        </div>
       </div>
       <div class="contact-side">
         <div class="phone-card">
           <span class="eyebrow">How it works</span>
-          <p>Call or text and leave a brief message with your name and the best time to reach you. I'll call you back to set up your free 15-minute consultation, usually within two business days.</p>
+          <p>Call, text, or email with your name and the best time to reach you. I'll get back to you to set up your free 15-minute consultation, usually within two business days.</p>
         </div>
-        <p class="fine">Please don't share sensitive health details by text or voicemail. We can talk more on the phone. This line is not monitored for emergencies. If you're in crisis, call or text 988.</p>
+        <p class="fine">Please don't share sensitive health details by email, text, or voicemail. We can talk more on the phone. This line is not monitored for emergencies. If you're in crisis, call or text 988.</p>
       </div>
     </div>
   </section>
@@ -475,7 +482,7 @@ footer a { color: var(--band-ink); }
     </div>
     <div style="display:grid;gap:10px">
       <p>&copy; 2026 Natalie Waggaman, LICSW</p>
-      <p>nataliewaggamanlicsw.com</p>
+      <p><a href="mailto:natalie@nataliewaggamanlicsw.com">natalie@nataliewaggamanlicsw.com</a></p>
     </div>
   </div>
 </footer>
